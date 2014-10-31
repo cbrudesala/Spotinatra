@@ -9,6 +9,9 @@
       margin-top: 200px;
       text-align: center;
     }
+    li{
+      list-style: none;
+    }
     </style>
   </head>
   <body>
@@ -21,7 +24,7 @@
       </form>
       <ul>
         <% @@SONG_LIST.each do |song| %>
-          <li><%= song.first %> --> <%= song.last %></li>
+          <li>Name: <%= song.first %> --> Artist: <%= song.last %></li>
         <% end %>
       </ul>
     </div>
