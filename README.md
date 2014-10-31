@@ -1,0 +1,4 @@
+Spotinatra
+==========
+
+Spotinatra exercise
