@@ -13,7 +13,17 @@
   </head>
   <body>
     <div class="centered">
-      <pre><%= @asciiSentence %></pre>
+      <form action="songs/new" method="POST">
+        Please, fill both inputs:
+        <input name="name" type="text" placeholder="Write a song name"/>
+        <input name="artist" type="text" placeholder="Writa an artist"/>
+        <input type="submit">
+      </form>
+      <ul>
+        <% @@SONG_LIST.each do |song| %>
+          <li><%= song.first %> --> <%= song.last %></li>
+        <% end %>
+      </ul>
     </div>
   </body>
 </html>
